@@ -23,9 +23,14 @@
         font-weight:bold;
         font-style: normal;
     }
-    
+
     #Main-body{
-        width:600px; height:2383px; background-color:#ffffff; padding:0px; box-sizing:border-box;
+        width:600px;
+        height:2383px;
+        background-color:#ffffff;
+        padding:0px;
+        box-sizing:border-box;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
     #header{
         width:600px; height: 100px; padding: 0px;
@@ -37,16 +42,89 @@
         height: auto;
     }
 
-    #header a {
-        position: absolute;
-        top: 10px; /* adjust as needed */
-        left: 20px; /* adjust as needed */
-        color: white;
-        font-size: 20px;
+    #header h1 {
+        font-family: Antenna;
         font-weight: bold;
-        padding: 5px 10px;
-        border-radius: 5px;
+        position: absolute;
+        bottom: 50px; /* adjust as needed */
+        left: 15px; /* adjust as needed */
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        margin: 0px;
+    }
+
+        #header h2 {
+        font-family: Antenna;
+        font-weight: 500;
+        position: absolute;
+        bottom: 10px; /* adjust as needed */
+        left: 15px; /* adjust as needed */
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        margin: 0px;
+    }
+
+    .news-container{
+        box-sizing:border-box;
+        display: flex;
+        width: 600px;height: 500px;
+        padding: 20px 25px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-bottom: 10px;
+    }
+
+    .news-img{
+        width: 480px; height: 240px;
+        border: 2px solid #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        background-repeat: no-repeat;
+        background-color: lightgray;
+     }
+
+    .news-title{
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0px;
+     }
+
+    .news-body{
+        text-align: left;
+        hyphens: auto;
+        color: #000;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    a{
+        box-sizing:border-box;
+        display: block;
         text-decoration: none;
+        width: 150px;
+        height: 40px;
+        gap: 10px;
+        border-radius: 30px;
+        background-color: #4E0089;
+        border: 0;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 10px;
     }
 
   </style>
@@ -57,15 +135,44 @@
     <table width="100%" cellpadding="0" cellspacing="0">
         <tr>
           <td bgcolor="#E5E5E5" align="center" style="padding:0px;">
+
             <div id="Main-body">
-                <div id="header">
-                    <img src="https://raw.githubusercontent.com/bboechat10/html/refs/heads/main/Images/Newsletter%20header.jpg" alt="Cabeçalho">
-                    <a>NewsLetter oficial</a>
+
+                    <div id="header">
+                    <img src="https://cdn.emailacademy.com/user/unregistered/Newsletter header2025_05_20_01_26_01_0500000031_01_26_11.webp" alt="Cabeçalho">
+                    <h1>NewsLetter oficial</h1>
+                    <h2>Abril - Maio 2025</h2>
+                    </div>
+                                                <!-- Primeiro Bloco -->
+                <div class="news-container">
+                <div class="news-img" style="background: url(https://www.rj.gov.br/proderj/sites/default/files/styles/imagem_500x200/public/imagem_noticias/Interno%20PRODERJ%20e%20SETD%20-%20Tech%20Gov%20Forum.jpg?itok=Ow3xHqlx) -15px 0px / 122%;"></div>
+                <p class="news-title">Secretaria de Transformação Digital e PRODERJ participam da 2ª edição do Tech Gov RJ</p>
+                <p class="news-body">O Governo do Rio marcou presença na 2ª edição do Tech Gov Forum RJ, realizada nesta quarta-feira (14), no Museu do Amanhã. A Secretaria de Estado de Transformação Digital (SETD) e o PRODERJ foram destaques no encontro, que reuniu especialistas, líderes públicos e representantes de municípios para debater os avanços da transformação digital no Estado.</p>
+
+                    <a target="_blank" href="https://www.rj.gov.br/proderj/node/1586">LER MAIS</a>
                 </div>
-            </div>
+                                                <!-- Segundo Bloco -->
+                <div class="news-container">
+                <div class="news-img" style="background: url(https://www.rj.gov.br/proderj/sites/default/files/styles/imagem_500x200/public/imagem_noticias/Design%20sem%20nome%20%2812%29.png?itok=i6S_vULi) 50% / 120%;"></div>
+                <p class="news-title">Lucio Camilo é o novo presidente do PRODERJ</p>
+                <p class="news-body">O Centro de Tecnologia de Informação e Comunicação do Estado do Rio de Janeiro (PRODERJ), autarquia vinculada à Secretaria de Transformação Digital, tem um novo presidente. Lucio Camilo, servidor de carreira do Tribunal de Contas do Estado (TCE/RJ), assume o cargo com perfil técnico, ampla experiência em cargos de liderança e diversos livros publicados sobre tecnologia e governo digital. Antes da nomeação, ocupava a vice-presidência de Tecnologia do órgão de TIC do Estado.</p>
+
+                    <a target="_blank" href="https://www.rj.gov.br/proderj/node/1581">LER MAIS</a>
+                </div>
+                                                <!-- Terceiro Bloco -->
+                <div class="news-container">
+                <div class="news-img" style="background: url(https://www.rj.gov.br/proderj/sites/default/files/styles/imagem_500x200/public/imagem_noticias/Carrossel%20-%20Portal%20proderj.png?itok=JJDGBjqv)lightgray 100%/cover;"></div>
+                <p class="news-title">SETD e PRODERJ participam de evento que reúne entidades estaduais e públicas de TIC</p>
+                <p class="news-body">O Centro de Tecnologia de Informação e Comunicação do Estado do Rio de Janeiro (PRODERJ), autarquia vinculada à Secretaria de Transformação Digital, tem um novo presidente. Lucio Camilo, servidor de carreira do Tribunal de Contas do Estado (TCE/RJ), assume o cargo com perfil técnico, ampla experiência em cargos de liderança e diversos livros publicados sobre tecnologia e governo digital. Antes da nomeação, ocupava a vice-presidência de Tecnologia do órgão de TIC do Estado.</p>
+
+                    <a target="_blank" href="https://www.rj.gov.br/proderj/node/1581">LER MAIS</a>
+                </div>
+
+
+
+            </div>               
         </td>
     </tr>
   </table>
-      
 </body>
 </html>
